@@ -1,4 +1,5 @@
-{
-  "prefix": "%",
-  "token": "TOKEN_HERE"
-}
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
+TOKEN = config["TOKEN"]
+PREFIX = config["PREFIX"]

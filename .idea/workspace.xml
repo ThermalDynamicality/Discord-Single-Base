@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63876db3-b166-445c-9691-d1e797bf8ef9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discord_base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/discord_base/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discord_base/error_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/discord_base/error_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discord_base/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/discord_base/message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discord_base/roles.py" beforeDir="false" afterPath="$PROJECT_DIR$/discord_base/roles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/error_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/error_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/systemIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/systemIO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Computer-Science-I/lab08" />
