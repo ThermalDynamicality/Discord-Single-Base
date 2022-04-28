@@ -1,7 +1,7 @@
 """
 File: error_handling.py\n
 Author: Stanley Goodwin\n
-Last Updated: 4/6/2022
+Last Updated: 4/11/2022
 
 Description:
     Provides error handling and printing for functions.

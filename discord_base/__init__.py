@@ -1,7 +1,7 @@
 """
 File: __init__.py\n
 Author: Stanley Goodwin\n
-Last Updated: 4/6/2022
+Last Updated: 4/11/2022
 
 Description:
     Creates a subclass for discord cogs in order to speed up programming.
@@ -12,6 +12,7 @@ To Do: N/A
 """
 import os
 import sys
+
 
 # Temporary directory switch
 PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))

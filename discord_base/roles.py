@@ -1,7 +1,7 @@
 """
 File: roles.py\n
 Author: Stanley Goodwin\n
-Last Updated: 4/6/2022
+Last Updated: 4/11/2022
 
 Description:
     Provides the discord bot and programs with role-related functions.
