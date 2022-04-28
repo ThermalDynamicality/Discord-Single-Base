@@ -1,12 +1,13 @@
 """
-File: message.py\n
-Author: Stanley Goodwin\n
-Last Updated: 4/11/2022
+File: message.py
+Author: Stanley Goodwin
+Last Updated: 4/27/2022
 
 Description:
     Provides the discord bot and programs with message-related functions.
 
-Known Issues: N/A
+Known Issues:
+    May not print function name in the error log.
 
 To Do: N/A
 """

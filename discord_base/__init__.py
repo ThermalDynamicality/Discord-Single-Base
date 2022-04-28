@@ -1,6 +1,6 @@
 """
-File: __init__.py\n
-Author: Stanley Goodwin\n
+File: __init__.py
+Author: Stanley Goodwin
 Last Updated: 4/11/2022
 
 Description:

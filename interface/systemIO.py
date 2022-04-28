@@ -1,10 +1,10 @@
 """
 File: systemIO.py
 Author: Stanley Goodwin
-Last Updated: 4/11/2022
+Last Updated: 4/27/2022
 
 Description:
-    A library for reading, writing, and appending text to files in the system.
+    A library for reading, writing, and appending text to a file in the system.
 
 Known Issues: N/A
 
@@ -43,7 +43,7 @@ def read(directory: str, *,
                 _output = file.read().splitlines()
 
         # If line number is not none, return the line
-        if line_number is not None:
+        if isinstance(line_number, int) and line_number is not None:
             return _output[line_number]
 
         # If choosing random, return random line
@@ -58,7 +58,7 @@ def read(directory: str, *,
 def write(directory: str,
           input_data: str | dict,
           *,
-          overwrite_file: bool = False
+          overwrite: bool = False
           ) -> None:
     """
     Writes text to a directory (append / overwrite).
@@ -68,7 +68,7 @@ def write(directory: str,
     :param input_data: The data to store.
 
     # Keyword Arguments
-    :param overwrite_file: Whether to overwrite the file.
+    :param overwrite: Whether to overwrite the file.
 
     # Return
     :return None:
@@ -79,7 +79,7 @@ def write(directory: str,
             input_data = dumps(input_data)
 
         # Opens file in append or write mode and writes to file
-        method = "w" if overwrite_file else "a+"
+        method = "w" if overwrite else "a+"
         with open(directory, method, encoding="utf8") as file:
             file.write(input_data)
 

@@ -1,12 +1,13 @@
 """
-File: error_handling.py\n
-Author: Stanley Goodwin\n
-Last Updated: 4/11/2022
+File: error_handling.py
+Author: Stanley Goodwin
+Last Updated: 4/27/2022
 
 Description:
     Provides error handling and printing for functions.
 
-Known Issues: N/A
+Known Issues:
+    May print to log weirdly and not to the right directory.
 
 To Do: N/A
 """
@@ -28,9 +29,9 @@ def log_error(function: str, error: str, *params) -> None:
     DIVIDER = "--------------------------------------------------"
 
     # Text string
-    text = f"""{DIVIDER}\n
-    Function: {function}()\n
-    Error: {error}\n
+    text = f"""{DIVIDER}
+    Function: {function}()
+    Error: {error}
     Parameters:\n"""
     for i in params:  # Add parameters
         text += f"\t{i=}\n"

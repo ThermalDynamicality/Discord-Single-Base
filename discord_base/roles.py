@@ -1,6 +1,6 @@
 """
-File: roles.py\n
-Author: Stanley Goodwin\n
+File: roles.py
+Author: Stanley Goodwin
 Last Updated: 4/11/2022
 
 Description:
