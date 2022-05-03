@@ -1,7 +1,7 @@
 """
 File: error_handling.py
 Author: Stanley Goodwin
-Last Updated: 4/27/2022
+Last Updated: 5/2/2022
 
 Description:
     Provides error handling and printing for functions.
@@ -12,7 +12,7 @@ Known Issues:
 To Do: N/A
 """
 import logging
-logging.basicConfig(filename="../$store/log.txt", encoding='utf-8', level=logging.ERROR)
+logging.basicConfig(filename="log.txt", encoding='utf-8', level=logging.ERROR)
 
 
 def log_error(function: str, error: str, *params) -> None:

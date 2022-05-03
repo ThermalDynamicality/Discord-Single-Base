@@ -1,7 +1,7 @@
 """
 File: message.py
 Author: Stanley Goodwin
-Last Updated: 4/27/2022
+Last Updated: 5/2/2022
 
 Description:
     Provides the discord bot and programs with message-related functions.
@@ -60,11 +60,11 @@ async def message(self,
             elif _type == "user":
                 output = self.client.get_user(_id)
             else:
-                raise Exception("Invalid output type (not \"channel\" or \"user\").")
+                raise ValueError("Invalid output type (not \"channel\" or \"user\").")
         except Exception as error:
             log_error(__name__, error, output, content, duration, replacement_dict)
 
-    # If message_content is a list, convert to multiline comment
+    # If content is a list, convert to multiline comment
     if isinstance(content, list) and multiline:
         content = _convert_to_multiline(content)
 
