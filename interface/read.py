@@ -1,19 +1,18 @@
 """
-File: systemIO.py
+File: read.py
 Author: Stanley Goodwin
-Last Updated: 5/2/2022
+Last Updated: 5/22/2022
 
 Description:
-    A library for reading, writing, and appending text to a file in the system.
+    A function for reading a file from the system it is being run on.
 
 Known Issues: N/A
 
-To Do:
-    Consider a "replace in file" function.
+To Do: N/A
 """
 from error_handling import log_error
 from random import choice
-from json import load, dumps
+from json import load
 
 
 def read(directory: str, *,
@@ -54,35 +53,3 @@ def read(directory: str, *,
     except Exception as error:
         log_error(__name__, error, directory, read_as_json, line_number, choose_random)
         return None
-
-
-def write(directory: str,
-          input_data: str | dict,
-          *,
-          overwrite: bool = False
-          ) -> None:
-    """
-    Writes text to a directory (append / overwrite).
-
-    # Positional Arguments
-    :param directory: The directory of the file.
-    :param input_data: The data to store.
-
-    # Keyword Arguments
-    :param overwrite: Whether to overwrite the file.
-
-    # Return
-    :return None:
-    """
-    try:
-        # Converts json data into plain-text
-        if isinstance(input_data, dict):
-            input_data = dumps(input_data)
-
-        # Opens file in append or write mode and writes to file
-        method = "w" if overwrite else "a+"
-        with open(directory, method, encoding="utf8") as file:
-            file.write(input_data)
-
-    except Exception as error:
-        log_error(__name__, error, directory, input_data)
