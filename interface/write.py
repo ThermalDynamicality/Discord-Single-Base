@@ -1,15 +1,15 @@
 """
-File: write.py
-Author: Stanley Goodwin
+File: write.py \n
+Author: Stanley Goodwin \n
 Last Updated: 5/22/2022
 
 Description:
-    A function for writing to a file in the system.
+A function for writing to a file in the system.
 
 Known Issues: N/A
 
 To Do:
-    Consider a "replace in file" function.
+Consider a "replace in file" function.
 """
 from error_handling import log_error
 from json import dumps

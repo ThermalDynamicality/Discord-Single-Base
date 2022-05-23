@@ -1,10 +1,10 @@
 """
-File: __init__.py
-Author: Stanley Goodwin
-Last Updated: 5/17/2022
+File: __init__.py \n
+Author: Stanley Goodwin \n
+Last Updated: 5/22/2022
 
 Description:
-    Creates a subclass for discord cogs in order to speed up programming.
+Creates a subclass for discord cogs in order to speed up programming.
 
 Known Issues: N/A
 

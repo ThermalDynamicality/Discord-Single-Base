@@ -1,10 +1,10 @@
 """
-File: __init__.py
-Author: Stanley Goodwin
+File: __init__.py \n
+Author: Stanley Goodwin \n
 Last Updated: 5/22/2022
 
 Description:
-    Library of common interfacing interactions between program and system.
+Library of common interfacing interactions between program and system.
 
 Known Issues: N/A
 

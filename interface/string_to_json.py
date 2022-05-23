@@ -1,10 +1,10 @@
 """
-File: list_directory.py
-Author: Stanley Goodwin
+File: list_directory.py \n
+Author: Stanley Goodwin \n
 Last Updated: 5/22/2022
 
 Description:
-    A function for converting string to a json dictionary.
+A function for converting string to a json dictionary.
 
 Known Issues: N/A
 

@@ -1,10 +1,10 @@
 """
-File: has_role.py
-Author: Stanley Goodwin
-Last Updated: 5/3/2022
+File: has_role.py \n
+Author: Stanley Goodwin \n
+Last Updated: 5/22/2022
 
 Description:
-    Tests if a user has a role.
+Tests if a user has a role.
 
 Known Issues: N/A
 

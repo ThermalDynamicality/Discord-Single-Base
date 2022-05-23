@@ -1,10 +1,10 @@
 """
-File: take_roles.py
-Author: Stanley Goodwin
-Last Updated: 5/3/2022
+File: take_roles.py \n
+Author: Stanley Goodwin \n
+Last Updated: 5/22/2022
 
 Description:
-    Given a user, it takes away a role.
+Given a user, it takes away a role.
 
 Known Issues: N/A
 

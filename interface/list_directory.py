@@ -1,10 +1,10 @@
 """
-File: list_directory.py
-Author: Stanley Goodwin
+File: list_directory.py \n
+Author: Stanley Goodwin \n
 Last Updated: 5/22/2022
 
 Description:
-    A function for listing the files in a given directory.
+A function for listing the files in a given directory.
 
 Known Issues: N/A
 

@@ -1,10 +1,10 @@
 """
-File: read.py
-Author: Stanley Goodwin
+File: read.py \n
+Author: Stanley Goodwin \n
 Last Updated: 5/22/2022
 
 Description:
-    A function for reading a file from the system it is being run on.
+A function for reading a file from the system it is being run on.
 
 Known Issues: N/A
 

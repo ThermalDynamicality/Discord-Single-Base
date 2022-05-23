@@ -15,9 +15,9 @@ import logging
 logging.basicConfig(filename="log.txt", encoding='utf-8', level=logging.ERROR)
 
 
-def log_error(function: str, error: str, *params) -> None:
+def log_error(function: str, error: Exception, *params) -> None:
     """
-    Logs an error to the $store file when a function fails.
+    Logs an error to the log file when a function fails.
 
     :param function: The name of the function that errored.
     :param error:    The string that explains the error that occurred.
@@ -26,18 +26,18 @@ def log_error(function: str, error: str, *params) -> None:
     """
 
     # Constants
-    DIVIDER = "--------------------------------------------------"
+    divider = "--------------------------------------------------"
 
     # Text string
-    text = f"""{DIVIDER}
+    text = f"""{divider}
     Function: {function}()
-    Error: {error}
+    Error: {str(error)}
     Parameters:\n"""
     for i in params:  # Add parameters
         text += f"\t{i=}\n"
 
     # Closing divider
-    # text += DIVIDER  # Not currently needed
+    # text += divider  # Not currently needed
 
     # Log Error
     logging.error(text)

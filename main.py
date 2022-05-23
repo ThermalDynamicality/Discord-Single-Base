@@ -50,7 +50,7 @@ def instance():
         await ctx.send(error)
         print(error)
 
-    @client.slash_command(name="shutdown", description="Shuts down the bot")
+    @client.slash_command(name="shutdown", description="Shuts down the bot.")
     async def shutdown(interaction: Interaction) -> None:
         await interaction.response.send_message("Shutting down...")
         print("Shutting down...")
