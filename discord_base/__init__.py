@@ -1,7 +1,7 @@
 """
 File: __init__.py
 Author: Stanley Goodwin
-Last Updated: 5/3/2022
+Last Updated: 5/17/2022
 
 Description:
     Creates a subclass for discord cogs in order to speed up programming.
@@ -23,6 +23,8 @@ sys.path.append(PACKAGE_DIR)
 class DiscordUtils:
     from message import message
     from has_role import has_role
+    from give_role import give_role
+    from take_role import take_role
 
 
 # Reverts directory switch
