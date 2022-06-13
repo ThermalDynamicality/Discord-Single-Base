@@ -1,28 +1,23 @@
 """
-File: list_directory.py \n
+File: string_to_json.py \n
 Author: Stanley Goodwin \n
-Last Updated: 5/22/2022
-
-Description:
-A function for converting string to a json dictionary.
-
-Known Issues: N/A
-
-To Do: N/A
+Last Updated: 6/12/2022
 """
-from error_handling import log_error
+import logging
 from json import loads
 
 
 def string_to_json(json_string: str) -> dict:
     """
-    Converts a string of JSON into a JSON dictionary and returns the dictionary.
+    Converts a string into a JSON dictionary and returns the dictionary.
 
-    :param json_string: The input string.
-    :return dictionary: The dictionary of the string.
+    :param json_string: The input string to convert to a dictionary.
+    :return: string_dictionary – The dictionary of the string.
     """
     try:
-        return loads(json_string)
+        string_dictionary = loads(json_string)
+        logging.info(f"{__name__}: Converted String to JSON")
+        return string_dictionary
     except Exception as error:
-        log_error(__name__, error, json_string)
-        return {}
+        logging.error(f"{__name__}: {error}")
+        return {}  # Returns an empty dictionary on exception
