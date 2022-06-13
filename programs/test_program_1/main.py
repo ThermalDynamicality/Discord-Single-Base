@@ -1,16 +1,13 @@
 """
 File: main.py \n
 Author: Stanley Goodwin \n
-Last Updated: 5/22/2022
+Last Updated: 6/12/2022
 
 Description:
-Program 1
 
-Known Issues: N/A
-
-To Do: N/A
 """
-from discord.ext import commands
+import logging
+from nextcord.ext import commands
 from discord_base import DiscordUtils
 
 

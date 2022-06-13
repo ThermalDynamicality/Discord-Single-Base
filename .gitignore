@@ -131,3 +131,5 @@ dmypy.json
 # Custom files
 .idea/
 .vscode/
+log.txt
+programs/

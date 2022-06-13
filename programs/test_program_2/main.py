@@ -1,14 +1,10 @@
 """
 File: main.py \n
 Author: Stanley Goodwin \n
-Last Updated: 5/22/2022
+Last Updated: 6/12/2022
 
 Description:
-Program 2
 
-Known Issues: N/A
-
-To Do: N/A
 """
 import logging
 from nextcord.ext import commands
