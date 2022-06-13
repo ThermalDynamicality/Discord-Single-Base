@@ -4,18 +4,17 @@ Author: Stanley Goodwin \n
 Last Updated: 6/12/2022
 
 Description:
-The main file for executing the discord bot.
+    The main file for executing the discord bot.
 """
-import os
 import logging
 import nextcord
-from nextcord import Interaction
 from nextcord.ext import commands
 from dotenv import dotenv_values
 from interface import SystemIO
 
+
 # Bot logging settings
-logging.basicConfig(filename="log.txt", encoding='utf-8', level=logging.INFO)
+logging.basicConfig(filename="log.txt", encoding='utf-8', level=logging.ERROR)
 
 
 # Load cogs
@@ -42,14 +41,15 @@ def load_cogs(client):
             try:
                 cog_file = SystemIO.read(f"{program_dir}/program.json", read_as_json=True)["cog_file"]
                 client.load_extension(f"programs.{program}.{cog_file[:-3]}")
+                logging.info(f"{__name__}: Loaded {program}!")
                 print(f"Loaded {program}!")
             except Exception as error:
+                logging.error(f"{__name__}: Failed to load program {program}!\n{error}\n")
                 print(f"Failed to load program {program}!\n{error}\n")
-                logging.error(f"Failed to load program {program}!\n{error}\n")
 
         else:
+            logging.error(f"{__name__}: File program.json is missing from {program}")
             print(f"File program.json is missing from {program}")
-            logging.error(f"File program.json is missing from {program}")
 
 
 # Main executable
@@ -85,12 +85,6 @@ def main():
         await ctx.send(f"Error Occurred. Try {prefix}help for a list of commands:\n{error}.")
         print(error)
 
-    @client.slash_command(name="shutdown", description="Shuts down the bot.")
-    async def shutdown(interaction: Interaction) -> None:
-        await interaction.response.send_message("Shutting down...")
-        print("Shutting down...")
-        os._exit(0)
-
     # Run instance
     client.run(token)
 
@@ -98,3 +92,16 @@ def main():
 # Main guard
 if __name__ == "__main__":
     main()
+
+
+
+"""
+    import os
+    from nextcord import Interaction
+    
+    @client.slash_command(name="shutdown", description="Shuts down the bot.")
+    async def shutdown(interaction: Interaction) -> None:
+        await interaction.response.send_message("Shutting down...")
+        print("Shutting down...")
+        os._exit(0)        
+"""
