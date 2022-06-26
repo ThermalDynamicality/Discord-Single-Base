@@ -7,7 +7,9 @@ Description:
     The main file for executing the discord bot.
 """
 import logging
+import os
 import nextcord
+from nextcord import Interaction
 from nextcord.ext import commands
 from dotenv import dotenv_values
 from interface import SystemIO
@@ -85,6 +87,12 @@ def main():
         await ctx.send(f"Error Occurred. Try {prefix}help for a list of commands:\n{error}.")
         print(error)
 
+    @client.slash_command(name="shutdown", description="Shuts down the bot.")
+    async def shutdown(interaction: Interaction) -> None:
+        await interaction.response.send_message("Shutting down...")
+        print("Shutting down...")
+        os._exit(0)
+
     # Run instance
     client.run(token)
 
@@ -92,16 +100,3 @@ def main():
 # Main guard
 if __name__ == "__main__":
     main()
-
-
-
-"""
-    import os
-    from nextcord import Interaction
-    
-    @client.slash_command(name="shutdown", description="Shuts down the bot.")
-    async def shutdown(interaction: Interaction) -> None:
-        await interaction.response.send_message("Shutting down...")
-        print("Shutting down...")
-        os._exit(0)        
-"""
