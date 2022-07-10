@@ -1,14 +1,7 @@
 """
 File: __init__.py \n
 Author: Stanley Goodwin \n
-Last Updated: 5/22/2022
-
-Description:
-Library of common interfacing interactions between program and system.
-
-Known Issues: N/A
-
-To Do: N/A
+Description: Library of common interfacing interactions between program and _system.
 """
 import os
 import sys
@@ -19,7 +12,7 @@ PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(PACKAGE_DIR)
 
 
-# DiscordUtils class
+# SystemIO class
 class SystemIO:
     from read import read
     from write import write

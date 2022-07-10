@@ -1,15 +1,12 @@
 """
 File: main.py \n
 Author: Stanley Goodwin \n
-Last Updated: 6/12/2022
-
 Description:
-
 """
 import logging
 from nextcord.ext import commands
-from discord_base import DiscordUtils
-from interface import SystemIO
+from _discord import DiscordUtils
+from _system import SystemIO
 
 
 class Test1(commands.Cog, DiscordUtils):
@@ -28,7 +25,6 @@ class Test1(commands.Cog, DiscordUtils):
     @commands.command()
     async def bruh(self, ctx):
         await self.message(ctx, "{USER} has logged on", duration=10, replacement_dict={"USER": ctx.author.name})
-
 
 
 # Setup function

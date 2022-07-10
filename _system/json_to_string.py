@@ -1,7 +1,7 @@
 """
 File: json_to_string.py \n
 Author: Stanley Goodwin \n
-Last Updated: 6/12/2022
+Description: Converts a JSON dictionary to a string and returns the string.
 """
 import logging
 from json import dumps
@@ -9,14 +9,12 @@ from json import dumps
 
 def json_to_string(json_dictionary: dict) -> str:
     """
-    Converts a JSON dictionary to a string and returns the string.
-
-    :param json_dictionary: The input dictionary to convert to a string.
+    :param json_dictionary: The dictionary to convert to string.
     :return: dictionary_string – The string of the dictionary.
     """
     try:
         dictionary_string = dumps(json_dictionary)
-        logging.info(f"{__name__}: Converted JSON to String")
+        logging.debug(f"{__name__}: Converted JSON to String")
         return dictionary_string
     except Exception as error:
         logging.error(f"{__name__}: {error}")
